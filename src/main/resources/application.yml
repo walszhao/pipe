@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://121.89.204.43:3306/pipe?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: ylgyl1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+  favicon:
+    enabled: false
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.wals.pipe.entity
